@@ -22,12 +22,18 @@ logger = setup_logger()
 async def run_scrapers(keywords):
     jobs = []
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True) # Set headless=False for debugging
+        browser = await p.chromium.launch(
+            headless=True,
+            args=['--disable-blink-features=AutomationControlled']
+        )
+        context = await browser.new_context(
+            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        )
         
         scrapers = [
-            InternshalaScraper(browser),
-            UnstopScraper(browser),
-            NaukriScraper(browser)
+            InternshalaScraper(context),
+            UnstopScraper(context),
+            NaukriScraper(context)
         ]
         
         for scraper in scrapers:
@@ -39,6 +45,7 @@ async def run_scrapers(keywords):
             except Exception as e:
                 logger.error(f"Error executing {scraper.__class__.__name__}: {e}")
         
+        await context.close()
         await browser.close()
     return jobs
 

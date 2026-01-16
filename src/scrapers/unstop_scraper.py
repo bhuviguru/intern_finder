@@ -26,18 +26,15 @@ class UnstopScraper(BaseScraper):
                 await page.wait_for_load_state("networkidle")
 
                 # Parse job cards
-                # Selectors need to be verified, using generic structural assumptions or known classes
-                # Unstop usually uses specific card classes
-                job_cards = await page.query_selector_all(".c-body") # highly variable, needs robust selector
-
-                # Fallback to a broader selector if specific one fails
-                if not job_cards:
-                     job_cards = await page.query_selector_all("app-opportunity-card")
+                # Updated selector based on analysis: Card is an anchor tag with class 'item'
+                job_cards = await page.query_selector_all("a.item")
 
                 for card in job_cards:
                     try:
-                        role_elem = await card.query_selector("h2") or await card.query_selector(".job-title")
-                        company_elem = await card.query_selector("h3") or await card.query_selector(".org-name")
+                        # Title is usually in h3
+                        role_elem = await card.query_selector("h3")
+                        # Company is usually in p with class single-wrap
+                        company_elem = await card.query_selector("p.single-wrap")
                         
                         # Location and Stipend logic is trickier on Unstop as it varies
                         # We might need to click or check specific icons
@@ -47,10 +44,10 @@ class UnstopScraper(BaseScraper):
                         role = (await role_elem.inner_text()).strip()
                         company = (await company_elem.inner_text()).strip() if company_elem else "Unknown"
                         
-                        link_elem = await card.query_selector("a.card-anchor") or await card.query_selector("a")
+                        # The card itself is the link
+                        href = await card.get_attribute("href")
                         link = ""
-                        if link_elem:
-                            href = await link_elem.get_attribute("href")
+                        if href:
                             if href.startswith("http"):
                                 link = href
                             else:
