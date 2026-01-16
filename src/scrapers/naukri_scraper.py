@@ -24,6 +24,11 @@ class NaukriScraper(BaseScraper):
                 
                 await page.goto(url, timeout=60000)
                 await page.wait_for_load_state("domcontentloaded")
+
+                title = await page.title()
+                if "Access Denied" in title or "Security Check" in title:
+                    self.logger.warning(f"Access Denied by Naukri for {url}. functionality might be limited.")
+                    continue
                 
                 # Naukri classes are often obfuscated or standard
                 job_cards = await page.query_selector_all(".srp-jobtuple-wrapper")
