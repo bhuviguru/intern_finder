@@ -1,0 +1,128 @@
+2026-01-16 12:28:27,525 - InternshipBot - INFO - Starting Daily Internship Bot Check...
+2026-01-16 12:28:31,765 - InternshipBot - ERROR - Scraping process failed: BrowserType.launch: Executable doesn't exist at C:\Users\bhuva\AppData\Local\ms-playwright\chromium_headless_shell-1200\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-16 12:28:31,766 - InternshipBot - INFO - New unique jobs saved: 0
+2026-01-16 12:28:31,774 - InternshipBot - INFO - No new jobs to notify.
+2026-01-16 12:34:10,922 - InternshipBot - INFO - Starting Daily Internship Bot Check...
+2026-01-16 12:34:12,558 - InternshipBot - ERROR - Scraping process failed: BrowserType.launch: Executable doesn't exist at C:\Users\bhuva\AppData\Local\ms-playwright\chromium_headless_shell-1200\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-16 12:34:12,558 - InternshipBot - INFO - New unique jobs saved: 0
+2026-01-16 12:34:12,566 - InternshipBot - INFO - No new jobs to notify.
+2026-01-16 12:38:03,636 - InternshipBot - INFO - Starting Daily Internship Bot Check...
+2026-01-16 12:38:36,507 - InternshipBot - INFO - Starting InternshalaScraper...
+2026-01-16 12:38:41,951 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/frontend-internship
+2026-01-16 12:39:04,759 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/ui/ux-internship
+2026-01-16 12:39:23,890 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/web-developer-internship
+2026-01-16 12:39:34,730 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/react-internship
+2026-01-16 12:39:46,739 - InternshipBot - INFO - Found 160 jobs from InternshalaScraper
+2026-01-16 12:39:46,740 - InternshipBot - INFO - Starting UnstopScraper...
+2026-01-16 12:39:48,633 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=Frontend
+2026-01-16 12:40:14,375 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=UI/UX
+2026-01-16 12:40:17,950 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=Web%20Developer
+2026-01-16 12:40:23,272 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=React
+2026-01-16 12:40:28,562 - InternshipBot - INFO - Found 0 jobs from UnstopScraper
+2026-01-16 12:40:28,563 - InternshipBot - INFO - Starting NaukriScraper...
+2026-01-16 12:40:30,407 - NaukriScraper - INFO - Scraping https://www.naukri.com/frontend-internship-jobs
+2026-01-16 12:40:30,707 - NaukriScraper - INFO - Scraping https://www.naukri.com/ui/ux-internship-jobs
+2026-01-16 12:40:30,853 - NaukriScraper - INFO - Scraping https://www.naukri.com/web-developer-internship-jobs
+2026-01-16 12:40:31,046 - NaukriScraper - INFO - Scraping https://www.naukri.com/react-internship-jobs
+2026-01-16 12:40:31,266 - InternshipBot - INFO - Found 0 jobs from NaukriScraper
+2026-01-16 12:40:31,332 - InternshipBot - INFO - Total raw jobs scraped: 160
+2026-01-16 12:40:31,859 - InternshipBot - INFO - New unique jobs saved: 85
+2026-01-16 12:40:31,862 - InternshipBot - INFO - Preparing notification for 5 jobs.
+2026-01-16 12:40:36,435 - EmailSender - INFO - Email sent to bhuvanesh0709@gmail.com
+2026-01-16 12:40:36,443 - InternshipBot - INFO - Jobs marked as notified.
+2026-01-16 12:40:36,443 - InternshipBot - INFO - Daily Check Complete.
+2026-01-16 12:46:31,040 - InternshipBot - INFO - Starting Daily Internship Bot Check...
+2026-01-16 12:46:34,502 - InternshipBot - INFO - Starting InternshalaScraper...
+2026-01-16 12:46:39,933 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/frontend-internship
+2026-01-16 12:46:49,481 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/ui/ux-internship
+2026-01-16 12:46:57,215 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/web-developer-internship
+2026-01-16 12:47:06,443 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/react-internship
+2026-01-16 12:47:14,593 - InternshipBot - INFO - Found 160 jobs from InternshalaScraper
+2026-01-16 12:47:14,594 - InternshipBot - INFO - Starting UnstopScraper...
+2026-01-16 12:47:16,475 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=Frontend
+2026-01-16 12:47:29,495 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=UI/UX
+2026-01-16 12:47:36,100 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=Web%20Developer
+2026-01-16 12:47:40,190 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=React
+2026-01-16 12:47:43,719 - InternshipBot - INFO - Found 0 jobs from UnstopScraper
+2026-01-16 12:47:43,719 - InternshipBot - INFO - Starting NaukriScraper...
+2026-01-16 12:47:45,645 - NaukriScraper - INFO - Scraping https://www.naukri.com/frontend-internship-jobs
+2026-01-16 12:47:46,512 - NaukriScraper - INFO - Scraping https://www.naukri.com/ui/ux-internship-jobs
+2026-01-16 12:47:46,674 - NaukriScraper - INFO - Scraping https://www.naukri.com/web-developer-internship-jobs
+2026-01-16 12:47:46,970 - NaukriScraper - INFO - Scraping https://www.naukri.com/react-internship-jobs
+2026-01-16 12:47:47,288 - InternshipBot - INFO - Found 0 jobs from NaukriScraper
+2026-01-16 12:47:47,373 - InternshipBot - INFO - Total raw jobs scraped: 160
+2026-01-16 12:47:47,462 - InternshipBot - INFO - New unique jobs saved: 0
+2026-01-16 12:47:47,464 - InternshipBot - INFO - Preparing notification for 5 jobs.
+2026-01-16 12:47:54,961 - EmailSender - INFO - Email sent to bhuvanesh0709@gmail.com
+2026-01-16 12:47:54,966 - InternshipBot - INFO - Jobs marked as notified.
+2026-01-16 12:47:54,966 - InternshipBot - INFO - Daily Check Complete.
+2026-01-16 13:26:20,248 - InternshipBot - INFO - Starting Daily Internship Bot Check...
+2026-01-16 13:26:23,703 - InternshipBot - INFO - Starting InternshalaScraper...
+2026-01-16 13:26:28,905 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/frontend-internship
+2026-01-16 13:26:40,987 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/ui/ux-internship
+2026-01-16 13:26:48,866 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/web-developer-internship
+2026-01-16 13:26:57,222 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/react-internship
+2026-01-16 13:27:05,906 - InternshipBot - INFO - Found 160 jobs from InternshalaScraper
+2026-01-16 13:27:05,906 - InternshipBot - INFO - Starting UnstopScraper...
+2026-01-16 13:27:07,738 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=Frontend
+2026-01-16 13:27:15,607 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=UI/UX
+2026-01-16 13:27:19,374 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=Web%20Developer
+2026-01-16 13:27:23,272 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=React
+2026-01-16 13:27:25,766 - InternshipBot - INFO - Found 0 jobs from UnstopScraper
+2026-01-16 13:27:25,766 - InternshipBot - INFO - Starting NaukriScraper...
+2026-01-16 13:27:27,527 - NaukriScraper - INFO - Scraping https://www.naukri.com/frontend-internship-jobs
+2026-01-16 13:27:27,996 - NaukriScraper - INFO - Scraping https://www.naukri.com/ui/ux-internship-jobs
+2026-01-16 13:27:28,188 - NaukriScraper - INFO - Scraping https://www.naukri.com/web-developer-internship-jobs
+2026-01-16 13:27:28,289 - NaukriScraper - INFO - Scraping https://www.naukri.com/react-internship-jobs
+2026-01-16 13:27:28,517 - InternshipBot - INFO - Found 0 jobs from NaukriScraper
+2026-01-16 13:27:28,622 - InternshipBot - INFO - Total raw jobs scraped: 160
+2026-01-16 13:27:28,740 - InternshipBot - INFO - New unique jobs saved: 5
+2026-01-16 13:27:28,745 - InternshipBot - INFO - Preparing notification for 5 jobs.
+2026-01-16 13:27:33,422 - EmailSender - INFO - Email sent to bhuvanesh0709@gmail.com
+2026-01-16 13:27:33,433 - InternshipBot - INFO - Jobs marked as notified.
+2026-01-16 13:27:33,433 - InternshipBot - INFO - Daily Check Complete.
+2026-01-16 13:29:00,225 - InternshipBot - INFO - ⏳ Starting Scheduler. Bot will run daily at 09:00
+2026-01-16 13:29:00,233 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-01-16 13:29:00,238 - apscheduler.scheduler - INFO - Added job "job_wrapper" to job store "default"
+2026-01-16 13:29:00,238 - apscheduler.scheduler - INFO - Scheduler started
+2026-01-16 13:31:49,830 - InternshipBot - INFO - Starting Daily Internship Bot Check...
+2026-01-16 13:31:53,289 - InternshipBot - INFO - Starting InternshalaScraper...
+2026-01-16 13:31:58,605 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/frontend-internship
+2026-01-16 13:32:07,922 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/ui/ux-internship
+2026-01-16 13:32:16,827 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/web-developer-internship
+2026-01-16 13:32:25,903 - InternshalaScraper - INFO - Scraping https://internshala.com/internships/react-internship
+2026-01-16 13:32:35,072 - InternshipBot - INFO - Found 160 jobs from InternshalaScraper
+2026-01-16 13:32:35,074 - InternshipBot - INFO - Starting UnstopScraper...
+2026-01-16 13:32:36,928 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=Frontend
+2026-01-16 13:32:55,508 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=UI/UX
+2026-01-16 13:33:02,160 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=Web%20Developer
+2026-01-16 13:33:06,013 - UnstopScraper - INFO - Scraping https://unstop.com/internships?term=React
+2026-01-16 13:33:10,060 - InternshipBot - INFO - Found 0 jobs from UnstopScraper
+2026-01-16 13:33:10,062 - InternshipBot - INFO - Starting NaukriScraper...
+2026-01-16 13:33:12,016 - NaukriScraper - INFO - Scraping https://www.naukri.com/frontend-internship-jobs
+2026-01-16 13:33:13,530 - NaukriScraper - INFO - Scraping https://www.naukri.com/ui/ux-internship-jobs
+2026-01-16 13:33:13,822 - NaukriScraper - INFO - Scraping https://www.naukri.com/web-developer-internship-jobs
+2026-01-16 13:33:14,006 - NaukriScraper - INFO - Scraping https://www.naukri.com/react-internship-jobs
+2026-01-16 13:33:14,131 - InternshipBot - INFO - Found 0 jobs from NaukriScraper
+2026-01-16 13:33:14,255 - InternshipBot - INFO - Total raw jobs scraped: 160
+2026-01-16 13:33:14,366 - InternshipBot - INFO - New unique jobs saved: 1
+2026-01-16 13:33:14,372 - InternshipBot - INFO - Preparing notification for 5 jobs.
+2026-01-16 13:33:28,066 - EmailSender - INFO - Email sent to bhuvanesh0709@gmail.com
+2026-01-16 13:33:28,077 - InternshipBot - INFO - Jobs marked as notified.
+2026-01-16 13:33:28,077 - InternshipBot - INFO - Daily Check Complete.
